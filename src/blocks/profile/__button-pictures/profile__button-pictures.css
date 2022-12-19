@@ -1,0 +1,18 @@
+.profile__button-pictures{
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #FFFFFF;
+  padding: 14px 64px;
+}
+
+@media screen and (max-width: 879px) {
+  .profile__button-pictures {
+    margin: 0;
+    min-width: 282px;
+    border: 2px solid #FFFFFF;
+    padding: 17px 132px 17px 134px;
+  }
+}

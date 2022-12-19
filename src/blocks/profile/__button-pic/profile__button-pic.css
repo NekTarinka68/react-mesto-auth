@@ -1,0 +1,20 @@
+.profile__button-pic {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0;
+  transition: opacity .5s ease;
+}
+
+.profile__button-pic:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 879px) {
+  .profile__button-pic {
+    margin: 0;
+    min-width: 282px;
+    height: 50px;
+  }
+}

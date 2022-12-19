@@ -1,0 +1,19 @@
+.profile__button-change-avatar {
+  background-image: url(../../../images/pencil.svg);
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 0;
+  transition: opacity, .3s linear;
+}
+
+.profile__button-change-avatar:hover {
+  opacity: .8;
+  cursor: pointer;
+}

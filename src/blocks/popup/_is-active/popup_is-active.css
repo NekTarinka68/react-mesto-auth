@@ -1,0 +1,6 @@
+.popup_is-active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
