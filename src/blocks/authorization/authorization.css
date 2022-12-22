@@ -1,0 +1,9 @@
+.authorization {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  max-width: 358px;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+}

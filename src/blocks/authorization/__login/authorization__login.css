@@ -1,0 +1,9 @@
+.authorization__login {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.authorization__login:hover {
+  opacity: 0.5;
+}

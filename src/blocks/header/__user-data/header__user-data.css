@@ -1,0 +1,7 @@
+.header__user-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  gap: 24px;
+}
