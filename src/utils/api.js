@@ -15,71 +15,63 @@ export default class Api {
 
   getUserInfo() {
     return fetch(`${this._host}/users/me`, {
-      method: 'GET',
-      headers: this._headers
-    })
-    .then((res) => this._respondErr(res))
+      method: "GET",
+      headers: this._headers,
+    }).then((res) => this._respondErr(res));
   }
 
   getEditProfile(data) {
     return fetch(`${this._host}/users/me`, {
-      method: 'PATCH',
+      method: "PATCH",
       headers: this._headers,
-      body: JSON.stringify({name: data.name, about: data.about})
-    })
-    .then((res) => this._respondErr(res))
+      body: JSON.stringify({ name: data.name, about: data.about }),
+    }).then((res) => this._respondErr(res));
   }
 
   getInitialCards() {
     return fetch(`${this._host}/cards`, {
-      method: 'GET',
-      headers: this._headers
-    })
-    .then((res) => this._respondErr(res))
+      method: "GET",
+      headers: this._headers,
+    }).then((res) => this._respondErr(res));
   }
 
   getAddCard(data) {
     return fetch(`${this._host}/cards`, {
-      method: 'POST',
+      method: "POST",
       headers: this._headers,
-      body: JSON.stringify({name: data.name, link: data.link})
-    })
-    .then((res) => this._respondErr(res))
+      body: JSON.stringify({ name: data.name, link: data.link }),
+    }).then((res) => this._respondErr(res));
   }
 
   getProfileAvatar(data) {
     return fetch(`${this._host}/users/me/avatar`, {
-      method: 'PATCH',
+      method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data
-      })
-    })
-    .then((res) => this._respondErr(res))
+        avatar: data,
+      }),
+    }).then((res) => this._respondErr(res));
   }
 
   getLikeCard(id) {
     return fetch(`${this._host}/cards/${id}/likes`, {
-      method: 'PUT',
-      headers: this._headers
-    })
-    .then((res) => this._respondErr(res))
+      method: "PUT",
+      headers: this._headers,
+    }).then((res) => this._respondErr(res));
   }
 
   getDislikeCard(id) {
     return fetch(`${this._host}/cards/${id}/likes`, {
-      method: 'DELETE',
-      headers: this._headers
-    })
-    .then((res) => this._respondErr(res))
+      method: "DELETE",
+      headers: this._headers,
+    }).then((res) => this._respondErr(res));
   }
 
   getDeleteCard(id) {
     return fetch(`${this._host}/cards/${id}`, {
-      method: 'DELETE',
-      headers: this._headers
-    })
-    .then((res) => this._respondErr(res))
+      method: "DELETE",
+      headers: this._headers,
+    }).then((res) => this._respondErr(res));
   }
 }
 
